@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAYBEOSHI | Lip Tints</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=DM+Serif+Display:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="card hero-card">
+        <div class="logo-area">
+          <div class="placeholder-box">MAYBEOSHI logo</div>
+        </div>
+        <h1>Welcome to MAYBEOSHI</h1>
+        <p class="tagline">Your go-to Glow</p>
+      </section>
+
+      <section class="card product-section">
+        <div class="section-head">
+          <h2>Lip Tints</h2>
+          <span class="price-pill">3 shades • ₹249 each</span>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <h3 class="shade-apple">Apple Bite</h3>
+            <div class="product-placeholder">Add product image</div>
+            <p class="price">₹249</p>
+            <button class="add-btn" data-id="apple-bite" data-name="Apple Bite" data-price="249">🛒 Add to cart</button>
+          </article>
+
+          <article class="product-card">
+            <h3 class="shade-berry">Button Berry</h3>
+            <div class="product-placeholder">Add product image</div>
+            <p class="price">₹249</p>
+            <button class="add-btn" data-id="button-berry" data-name="Button Berry" data-price="249">🛒 Add to cart</button>
+          </article>
+
+          <article class="product-card">
+            <h3 class="shade-cacao">Cacao Blend</h3>
+            <div class="product-placeholder">Add product image</div>
+            <p class="price">₹249</p>
+            <button class="add-btn" data-id="cacao-blend" data-name="Cacao Blend" data-price="249">🛒 Add to cart</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="card cart-section">
+        <div class="section-head">
+          <h2>Your Cart</h2>
+        </div>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-footer">
+          <p>Total: <strong id="cartTotal">₹0</strong></p>
+          <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
