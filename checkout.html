@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAYBEOSHI | Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=DM+Serif+Display:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page-shell checkout-shell">
+      <section class="card checkout-card">
+        <h1 class="checkout-title">Delivery Details</h1>
+        <p class="checkout-subtext">Please enter your address to continue</p>
+
+        <form id="checkoutForm" novalidate>
+          <div class="form-grid">
+            <label>Full Name<input type="text" name="fullName" required /></label>
+            <label>Phone Number<input type="tel" name="phone" required /></label>
+            <label>Email Address<input type="email" name="email" required /></label>
+            <label>House / Flat / Building<input type="text" name="house" required /></label>
+            <label>Street / Area<input type="text" name="street" required /></label>
+            <label>City<input type="text" name="city" required /></label>
+            <label>State<input type="text" name="state" required /></label>
+            <label>PIN Code<input type="text" name="pin" required /></label>
+            <label class="full-width">Landmark (optional)<input type="text" name="landmark" /></label>
+          </div>
+
+          <div id="formMessage" class="form-message" aria-live="polite"></div>
+
+          <div class="button-row">
+            <button type="submit" class="accent-btn">Place Order</button>
+            <a href="index.html" class="ghost-btn">Back to Cart</a>
+          </div>
+        </form>
+
+        <div class="google-form-section">
+          <p>Need to share more details? Fill this form</p>
+          <a href="#" class="google-link">Google Form Link</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
